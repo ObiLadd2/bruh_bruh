@@ -9,6 +9,8 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
+
+    Collider2D col;
     public int spawn;
     public float health = 100;
     public float maxHealth = 100;
@@ -18,6 +20,7 @@ public class PlayerHealth : MonoBehaviour
     void Start()
     {
         maxHealth = health;
+       col = GetComponent<Collider2D>();
     }
 
     // Update is called once per frame
@@ -25,16 +28,8 @@ public class PlayerHealth : MonoBehaviour
     {
         Debug.Log(health);
         healthbar.fillAmount = Mathf.Clamp (health / maxHealth, 0.0f, 1.0f);
-        if (health > maxHealth ) health = maxHealth;
-        
-        
-           
+        if (health > maxHealth) health = maxHealth;
     }
-    private void Dead()
-    {
-        if (health <= 0.0f && CompareTag("Player"))
-        {
-            SceneManager.LoadScene(spawn);
-        }
-    }
+   
+   
 }
