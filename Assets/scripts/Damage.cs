@@ -6,7 +6,7 @@ using UnityEngine;
 public class Damage : MonoBehaviour
 {
     public PlayerHealth pHealth;
-    public float damage;
+    public float damage = 20;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
