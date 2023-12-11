@@ -5,13 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
     path: Assets/Scenes/9_JumpingBean BareBones.unity
     guid: 661454fa579c2f04f845349ac5e44cc1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/flip room 1.unity
     guid: 7404d669d03cf3f41848c1e0641c9e00
   m_configObjects: {}
